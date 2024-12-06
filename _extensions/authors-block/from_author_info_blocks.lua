@@ -194,7 +194,7 @@ local function create_affiliations_blocks(affiliations)
       return num_inlines .. affil.name
     end
   )
-  return {pandoc.Para(intercalate(affil_lines, {pandoc.LineBreak()}))}
+  return affil_lines
 end
 M.create_affiliations_blocks = create_affiliations_blocks
 
